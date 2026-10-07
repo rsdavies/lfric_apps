@@ -41,6 +41,7 @@
         "lfric_atm_scm_gal9_sahara-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
         "lfric_atm_scm_gal9_seaice-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
         "lfric_atm_scm_gal9_snow-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
+        "lfric_atm_scm_gal9_snow_fd_start_surf-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
         "lfric_atm_scm_gal9_toga-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
         "lfric_atm_scm_llcs-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",
         "lfric_atm_scm_rad_gas-BiP2x2-50000x50000_gadi_intel_fast-debug-64bit",

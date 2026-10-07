@@ -215,19 +215,19 @@ contains
         call soil_fields%get_field('soil_temperature', soil_temperature)
 
         if (snow_source == snow_source_surf) then
-          call ancil_fields%get_field('tile_snow_rgrain_in', tile_snow_rgrain_in)
-          call ancil_fields%get_field('tile_snow_mass_in', tile_snow_mass_in)
-          call ancil_fields%get_field('snow_under_canopy_in', snow_under_canopy_in)
-          call ancil_fields%get_field('snow_depth_in', snow_depth_in)
-          call ancil_fields%get_field('snowpack_density_in', snowpack_density_in)
-          call ancil_fields%get_field('n_snow_layers_in', n_snow_layers_in)
+          call ancil_fields%get_field('tile_snow_rgrain_analysis', tile_snow_rgrain_in)
+          call ancil_fields%get_field('tile_snow_mass_analysis', tile_snow_mass_in)
+          call ancil_fields%get_field('snow_under_canopy_analysis', snow_under_canopy_in)
+          call ancil_fields%get_field('snow_depth_analysis', snow_depth_in)
+          call ancil_fields%get_field('snowpack_density_analysis', snowpack_density_in)
+          call ancil_fields%get_field('n_snow_layers_analysis', n_snow_layers_in)
         else
-          call fd_fields%get_field('tile_snow_mass_in', tile_snow_mass_in)
-          call fd_fields%get_field('tile_snow_rgrain_in', tile_snow_rgrain_in)
-          call fd_fields%get_field('n_snow_layers_in', n_snow_layers_in)
-          call fd_fields%get_field('snow_depth_in', snow_depth_in)
-          call fd_fields%get_field('snow_under_canopy_in', snow_under_canopy_in)
-          call fd_fields%get_field('snowpack_density_in', snowpack_density_in)
+          call fd_fields%get_field('tile_snow_mass', tile_snow_mass_in)
+          call fd_fields%get_field('tile_snow_rgrain', tile_snow_rgrain_in)
+          call fd_fields%get_field('n_snow_layers', n_snow_layers_in)
+          call fd_fields%get_field('snow_depth', snow_depth_in)
+          call fd_fields%get_field('snow_under_canopy', snow_under_canopy_in)
+          call fd_fields%get_field('snowpack_density', snowpack_density_in)
         end if
       end if
 

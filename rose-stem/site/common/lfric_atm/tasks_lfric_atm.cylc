@@ -1036,6 +1036,18 @@
         "plot_str": "plot_scm.py $NODAL_DATA_DIR/lfric_diagnostics.nc  $PLOT_DIR",
     }) %}
 
+{% elif task_ns.conf_name == "scm_gal9_snow_fd_start_surf-BiP2x2-50000x50000" %}
+
+    {% do task_dict.update({
+        "opt_confs": ["l70_40km","no_aerosol","dice2","snow_init","snow_fd_start_surf"],
+        "resolution": "BiP2x2-50000x50000",
+        "DT": 600,
+        "tsteps": 432,
+        "wallclock": 5,
+        "kgo_checks": ["checksum"],
+        "plot_str": "plot_scm.py $NODAL_DATA_DIR/lfric_diagnostics.nc  $PLOT_DIR",
+    }) %}
+
 {% elif task_ns.conf_name == "scm_gal9_toga-BiP2x2-50000x50000" %}
 
     {% do task_dict.update({

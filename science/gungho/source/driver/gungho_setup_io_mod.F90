@@ -349,14 +349,7 @@ module gungho_setup_io_mod
                                                          io_mode=FILE_MODE_READ ) )
         end if
 
-      end if ! static ancils on cold start
-
-      ! Only read updating ancils on new run, if updating or using surf
-      if (ancil_option == ancil_option_updating .or. &
-           .not. checkpoint_read) then
-        ! need to add .or. use_surf_analysis here
-
-        if (snow_source == snow_source_surf ) then
+        if (snow_source == snow_source_surf) then
           if (snow_analysis_ancil_path(1:1) == '/') then
             write(ancil_fname,'(A)') trim(snow_analysis_ancil_path)
           else
@@ -367,6 +360,12 @@ module gungho_setup_io_mod
                                           xios_id="snow_analysis_ancil",  &
                                           io_mode=FILE_MODE_READ ) )
         end if
+
+      end if ! static ancils on cold start
+
+      ! Only read updating ancils on new run, if updating or using surf
+      if (ancil_option == ancil_option_updating .or. &
+           .not. checkpoint_read) then
 
         ! Set sea surface temperature ancil filename from namelist
         ! This can still be needed for coupled models for inland lakes

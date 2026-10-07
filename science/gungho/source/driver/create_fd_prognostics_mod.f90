@@ -273,25 +273,25 @@ contains
       endif
 
       ! snow fields
-      call setup_ancil_field("tile_snow_mass_in", depository, &
+      call setup_ancil_field("tile_snow_mass", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
-      call setup_ancil_field("n_snow_layers_in", depository, &
+      call setup_ancil_field("n_snow_layers", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
-      call setup_ancil_field("snow_depth_in", depository, &
+      call setup_ancil_field("snow_depth", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
-      call setup_ancil_field("tile_snow_rgrain_in", depository, &
+      call setup_ancil_field("tile_snow_rgrain", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
       call setup_ancil_field("snow_soot", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true.)
-      call setup_ancil_field("snow_under_canopy_in", depository, &
+      call setup_ancil_field("snow_under_canopy", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
-      call setup_ancil_field("snowpack_density_in", depository, &
+      call setup_ancil_field("snowpack_density", depository, &
                              fd_field_collection, mesh, twod_mesh, &
                              twod=.true., ndata=n_land_tile)
       call setup_ancil_field("snow_layer_thickness", depository, &
